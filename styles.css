@@ -56,7 +56,7 @@ img{max-width:100%;display:block}
 /* sections */
 section.sec{padding:64px 0;border-bottom:1px solid var(--line)}
 .sec-hd{max-width:680px;margin-bottom:32px}
-.sec-hd h2{font-size:clamp(23px,3vw,30px);letter-spacing:-.6px;margin:0 0 10px;color:var(--brand-deep);line-height:1.35}
+.sec-hd h1,.sec-hd h2{font-size:clamp(23px,3vw,30px);letter-spacing:-.6px;margin:0 0 10px;color:var(--brand-deep);line-height:1.35}
 .sec-hd p{margin:0;color:var(--sub)}
 
 .grid{display:grid;gap:16px}
