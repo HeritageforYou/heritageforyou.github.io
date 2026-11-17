@@ -189,6 +189,7 @@ section.sec{padding:64px 0;border-bottom:1px solid var(--line)}
 .fab .f-form{background:#3b6fd6}
 .fab .f-blog{background:#03c75a}
 .fab .f-blog b{color:#fff;font-size:14px;letter-spacing:-.3px}
+.fab .f-ig{background:linear-gradient(45deg,#f9a825,#e1306c 55%,#833ab4)}
 .fab .f-yt{background:#ff0000}
 .fab span{position:absolute;right:66px;white-space:nowrap;background:var(--brand-deep);color:#fff;font-size:13px;padding:5px 10px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .15s}
 .fab a:hover span,.fab a:focus-visible span{opacity:1}
