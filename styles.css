@@ -239,3 +239,9 @@ section.sec{padding:64px 0;border-bottom:1px solid var(--line)}
 .flow-more a{text-decoration:none}
 @media (max-width:860px){.tl-d{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.tl{padding:20px 4px}.tl li:not(:last-child)::after{width:8px;height:8px;border-width:2px;top:calc(var(--d)/2 - 4px);right:calc(-50% + var(--d)/2 + 5px)}.tl li:not(:last-child)::before{left:calc(50% + var(--d)/2 + 3px);right:calc(-50% + var(--d)/2 + 8px);height:2px}.tl-d{grid-template-columns:1fr}}
+
+/* 보수 계산기 바로가기 (소개 탭 일하는 방식) */
+.jump{display:inline-block;vertical-align:middle;margin-left:6px;font-size:13px;font-weight:700;color:var(--brand);background:var(--hl);padding:3px 10px;border-radius:999px;text-decoration:none;letter-spacing:0;white-space:nowrap}
+.jump::after{content:" →"}
+.jump:hover{background:var(--brand);color:var(--brand-ink)}
+section[id]{scroll-margin-top:76px}
