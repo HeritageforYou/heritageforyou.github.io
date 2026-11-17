@@ -245,3 +245,17 @@ section.sec{padding:64px 0;border-bottom:1px solid var(--line)}
 .jump::after{content:" →"}
 .jump:hover{background:var(--brand);color:var(--brand-ink)}
 section[id]{scroll-margin-top:76px}
+
+/* 가로 스크롤 목록 (절차 상세, 읽어볼 글) */
+.hs-nav{display:flex;align-items:center;justify-content:flex-end;gap:6px;margin:20px 0 8px}
+.hs-nav span{font-size:13px;color:var(--sub);margin-right:auto}
+.hs-b{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--brand);font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 0 2px}
+.hs-b:hover{background:var(--hl)}
+.tl-d.hs,.guides.hs{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc((100% - 24px)/3);gap:12px;margin-top:0;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:10px;scrollbar-width:thin;overscroll-behavior-x:contain}
+.hs>*{scroll-snap-align:start}
+.guides.hs{border-top:0}
+.guides.hs li{border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.guides.hs a{flex-direction:column-reverse;justify-content:flex-end;gap:6px;height:100%;padding:16px;font-size:15px;line-height:1.55}
+.guides.hs small{font-weight:700;color:var(--brand)}
+@media (max-width:860px){.tl-d.hs,.guides.hs{grid-auto-columns:calc((100% - 12px)/2)}}
+@media (max-width:560px){.tl-d.hs,.guides.hs{grid-auto-columns:82%}.hs-b{display:none}.hs-nav{margin-top:16px}}

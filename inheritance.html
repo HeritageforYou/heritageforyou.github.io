@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=202611172215">
+<link rel="stylesheet" href="styles.css?v=202611172220">
 <link rel="icon" href="favicon.png">
 
 </head>
@@ -53,7 +53,8 @@
     <li><span class="dot">5</span><b>신고·납부</b><em>6개월 안</em></li>
     <li><span class="dot">6</span><b>세무조사</b><em>이후 9개월</em></li>
   </ol>
-  <div class="tl-d">
+  <div class="hs-nav" aria-hidden="true"><span>옆으로 넘겨 보세요</span><button type="button" class="hs-b" data-d="-1">‹</button><button type="button" class="hs-b" data-d="1">›</button></div>
+  <div class="tl-d hs">
     <p><b>1. 사망신고, 안심상속 신청</b>사망일로부터 1개월 안에 동 행정복지센터에서 사망신고와 함께 재산조회(안심상속 원스톱)를 신청합니다.</p>
     <p><b>2. 재산조회, 상속인 확정</b>약 3주 뒤 조회 결과를 확인하고 세무사를 선임합니다. 상속포기는 3개월 안에 가정법원에 신청합니다.</p>
     <p><b>3. 재산평가, 분할 설계</b>평가 방법과 분할 비율에 따라 상속세, 취득세, 나중의 양도세까지 달라지는 가장 중요한 단계입니다.</p>
@@ -66,7 +67,8 @@
 
 <section class="sec"><div class="wrap">
   <div class="sec-hd"><h2>상속세 신고 전에 읽어볼 글</h2></div>
-  <ul class="guides">
+  <div class="hs-nav" aria-hidden="true"><span>옆으로 넘겨 보세요</span><button type="button" class="hs-b" data-d="-1">‹</button><button type="button" class="hs-b" data-d="1">›</button></div>
+  <ul class="guides hs">
     <li><a href="https://blog.naver.com/heritageforyou/224292511323" target="_blank" rel="noopener">상속세 신고 순서, 사망신고부터 세무조사까지 6단계 <small>절차</small></a></li>
     <li><a href="https://blog.naver.com/heritageforyou/224335498813" target="_blank" rel="noopener">상속세 세무조사, 10년 치 계좌내역 검토가 반드시 필요한 경우 <small>사전증여</small></a></li>
     <li><a href="https://blog.naver.com/heritageforyou/224298764390" target="_blank" rel="noopener">기준시가로 신고했다가 추징되는 이유, 감정평가가 필수일까? <small>재산 평가</small></a></li>
@@ -171,6 +173,10 @@ const calc=()=>{
 <script>
 var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
 b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+</script>
+<script>
+document.querySelectorAll('.hs-nav').forEach(function(n){var r=n.nextElementSibling;
+ n.querySelectorAll('.hs-b').forEach(function(b){b.addEventListener('click',function(){r.scrollBy({left:(+b.dataset.d)*r.clientWidth*0.8,behavior:'smooth'})})})});
 </script>
 </body>
 </html>
