@@ -261,3 +261,24 @@ section[id]{scroll-margin-top:76px}
 .guides.hs small{font-weight:700;color:var(--brand)}
 @media (max-width:860px){.tl-d.hs,.guides.hs{grid-auto-columns:calc((100% - 12px)/2)}}
 @media (max-width:560px){.tl-d.hs,.guides.hs{grid-auto-columns:82%}.hs-b{display:none}.hs-nav{margin-top:16px}}
+/* guide article */
+.guide{padding:48px 0 24px}
+.guide .wrap{max-width:780px}
+.g-hd h1{font-size:clamp(26px,4vw,38px);letter-spacing:-.8px;line-height:1.3;margin:0 0 12px;color:var(--brand-deep)}
+.byline{font-size:13.5px;color:var(--sub);margin:0 0 24px}
+.g-sum{background:var(--hl);border-left:4px solid var(--brand);border-radius:10px;padding:18px 20px;margin-bottom:24px}
+.g-sum p{margin:0}.g-sum b{color:var(--brand);margin-right:6px}
+.g-tb{width:100%;border-collapse:collapse;font-size:14.5px;margin-bottom:12px;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.g-tb th{background:var(--brand);color:#fff;text-align:left;padding:10px 12px;font-weight:700}
+.g-tb td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top}
+.guide section{margin-top:40px}
+.guide h2{font-size:clamp(20px,2.6vw,24px);letter-spacing:-.4px;color:var(--brand-deep);margin:0 0 12px;line-height:1.4}
+.guide section p{margin:0 0 12px}
+.guide .check{margin:6px 0 14px}
+.tip{background:var(--paper);border:1px dashed var(--line);border-radius:10px;padding:12px 16px;font-size:14.5px}
+.tip::before{content:"놓치기 쉬운 점";display:block;font-weight:700;color:var(--accent);font-size:13px;margin-bottom:4px}
+.g-faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.g-faq summary{font-weight:700;cursor:pointer}
+.g-faq details p{margin:10px 0 0;color:var(--sub)}
+.g-more ul{padding-left:18px;margin:0 0 12px}.g-more li{margin:6px 0}
+@media (max-width:600px){.g-tb{font-size:13px}.g-tb th,.g-tb td{padding:8px}}
